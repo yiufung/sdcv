@@ -350,7 +350,7 @@ Voice will fetch from youdao.com if you use other system."
   "Major mode to look up word through sdcv.
 \\{sdcv-mode-map}
 Turning on Text mode runs the normal hook `sdcv-mode-hook'."
-  (setq font-lock-defaults '(sdcv-mode-font-lock-keywords))
+  (setq font-lock-defaults '(sdcv-mode-font-lock-keywords t))
   (setq buffer-read-only t)
   (set (make-local-variable 'outline-regexp) "^-->.*\n-->"))
 
